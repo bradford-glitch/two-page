@@ -1,0 +1,22 @@
+#next{
+	border-top: 50px;
+	border-right: 50px;
+	text-align: center;
+	font-size: 30px;
+	background-color: navy blue;
+}
+#myDIV1 {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: green;
+  color: turquoise;
+  font: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#button1{
+	font-size: 25px
+}
+

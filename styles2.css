@@ -1,0 +1,14 @@
+#myDIV {  
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: darkgreen;
+  font-size: 20px;
+  font: bold;
+  margin-top: 10px;
+}
+
+#button2{
+	font-size: 25px
+}
+

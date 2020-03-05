@@ -1,0 +1,75 @@
+<!DOCTYPE: html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My story (page 2)</title>
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+		<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+<style>
+#myDIV {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 10px;
+}
+</style>
+</head>
+	<body onload="startTime()">
+  <div id="txt"></div>
+
+<h1>Welcome to my site</h1>
+
+<button onclick="myFunction()" id="button2">(FILLER short story)</button>
+
+<div id="myDIV">
+		Man’s voice: Have you ever heard of the word invention?
+<br>
+Woman’s voice: Yes? No? Well, we’ll tell you anyway.
+<br>
+Man’s voice: An invention is a mechanism that someone made.
+<br>
+Woman’s voice: Inventions are all created from Imagination at first.
+<br>
+Man’s voice: Then after imagination is reality, in which the inventor tries to create their imagination in reality.
+<br>
+Woman’s voice: An invention can be for good, but it can be used for evil.
+<br>
+In a lab somewhere
+(red lights and sirens going off)
+<br>
+“Ma’am I have to report (huf) that (hah) Dr.Cration has left the premises.” a scientist said
+<br>
+“Kyle you damn idiot, why now, you never complained. Whatever it doesn't matter we will find you no matter how far you go. After I get the data you know, I’m going to kill you.” a woman in a white and red suit says.
+<br>
+</div>
+
+		<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }}
+
+</script>
+
+	</body>

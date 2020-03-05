@@ -1,0 +1,48 @@
+<!DOCTYPE: html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My story (page 1)</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+
+</head>
+
+	<body onload="startTime()">
+  <div id="txt"></div>
+<h1>Welcome to my site</h1>
+<div><button onclick="myFunction()" id="button1">FILLER short story</button>
+<div id="myDIV1">
+		"Al..  ..oran  ..Aldoran wake up!" a 15 year old girl with short brown hair, about 5 foot 8 inches, golden eyes, and wearing commoner like clothes yells. My left eye peeks open as the girl is staring at me with a pouting face. ”Yes, Beatrice did you need something” said Aldoran "No I just want to spend time with you." Beatrice said softly. Aldoran sighed "look Bea I know you likeme not as a friend, but as crush and that won't go well cause I'm a-". No your wrong just because i'm human and your a <a href="https://en.wikipedia.org/wiki/Dragon"> dragon </a> dosen't mean we can't work something out" Beatrice yelled with tears in her eyes. TO BE CONTINUED
+   </div></div>
+
+		<script>
+function myFunction() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+		<a href="index2.html" id="next">next</a>
+	</body>
